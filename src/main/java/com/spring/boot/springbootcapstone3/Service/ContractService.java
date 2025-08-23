@@ -190,10 +190,6 @@ public class ContractService {
         return contractRepository.giveMeContractsStatistics(vendorId);
     }
 
-    // TODO:
-    //  7. refund request
-    //  8. sync invoice status from Moyasar API
-
     @Value("97be5b0a848d4c4c928fc95e91d8b821")
     private String adobeClientId;
 

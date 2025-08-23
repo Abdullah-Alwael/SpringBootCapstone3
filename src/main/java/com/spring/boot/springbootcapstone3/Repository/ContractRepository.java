@@ -52,4 +52,7 @@ public interface ContractRepository extends JpaRepository<Contract, Integer> {
             "FROM Contract c JOIN c.offer o " +
             "WHERE o.vendor.id = ?1")
     ContractsStatisticsOutDTO giveMeContractsStatistics(Integer vendorId);
+
+    @Query("SELECT c FROM Contract c WHERE c.transactionId is not null")
+    List<Contract> giveMeContractsWithTransactionsNotEmpty();
 }

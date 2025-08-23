@@ -52,4 +52,11 @@ public class PaymentController {
 
     }
 
+    // extra by abdullah
+    @PutMapping("/sync-status")
+    public ResponseEntity<?> syncContractStatus(){
+        paymentService.syncContractStatus();
+        return ResponseEntity.ok(new ApiResponse("Sync successful with no inconsistency in the records"));
+    }
+
 }
