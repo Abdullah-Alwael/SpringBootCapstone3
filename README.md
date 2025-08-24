@@ -34,8 +34,9 @@ In addition to:
    `git push --set-upstream origin YOUR-NAME`
 
 4. Create database in dataGrip:
-    - Note: start MySQL server
-
    `create database landscaping_system;`
 
    `use landscaping_system;`
+
+       - Note: start MySQL server
+
