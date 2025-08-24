@@ -1,0 +1,598 @@
+{
+	"info": {
+		"_postman_id": "e272d4d4-9826-4f66-871f-50e174342f74",
+		"name": "Planting and Landscaping (Abdullah)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46809246",
+		"_collection_link": "https://abdullahalwael.postman.co/workspace/Abdullah-Alwael's-Workspace~0afd19ff-4de9-4144-8b90-6b699a18a04f/collection/46809246-e272d4d4-9826-4f66-871f-50e174342f74?action=share&source=collection_link&creator=46809246"
+	},
+	"item": [
+		{
+			"name": "invoice (no longer included)",
+			"item": [
+				{
+					"name": "add invoice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"toEmail\": \"\",\r\n  \"paymentMethod\": \"\",\r\n  \"providerReference\": \"\",\r\n  \"contractId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/invoice/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"invoice",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list all invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/invoice/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"invoice",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update invoice",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"toEmail\": \"\",\r\n  \"paymentMethod\": \"\",\r\n  \"providerReference\": \"\",\r\n  \"contractId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/invoice/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"invoice",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete invoice",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/invoice/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"invoice",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contract (completely reconstructed by Hatem)",
+			"item": [
+				{
+					"name": "add contract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"totalPrice\": 0,\r\n  \"startDate\": \"\",\r\n  \"endDate\": \"\",\r\n  \"careScope\": \"\",\r\n  \"contractLocationName\": \"\",\r\n  \"contractLocationUrl\": \"\",\r\n  \"contractItemsJson\": \"\",\r\n  \"serviceRequestId\": 0,\r\n  \"organizationId\": 0,\r\n  \"vendorId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/contract/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list all contracts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/contract/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update contract",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"totalPrice\": 0,\r\n  \"startDate\": \"\",\r\n  \"endDate\": \"\",\r\n  \"careScope\": \"\",\r\n  \"contractLocationName\": \"\",\r\n  \"contractLocationUrl\": \"\",\r\n  \"contractItemsJson\": \"\",\r\n  \"serviceRequestId\": 0,\r\n  \"organizationId\": 0,\r\n  \"vendorId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/contract/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete contract",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/contract/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "add appointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"requestId\": 0,\r\n  \"vendorId\": 0,\r\n  \"status\": \"\",\r\n  \"notes\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/appointment/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list all appointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/appointment/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update appointment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"requestId\": 0,\r\n  \"vendorId\": 0,\r\n  \"status\": \"\",\r\n  \"notes\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/appointment/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete appointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/appointment/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Extra",
+			"item": [
+				{
+					"name": "Pay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Abdullah Test\",\r\n  \"number\": \"4201320111111010\",\r\n  \"cvc\": \"359\",\r\n  \"month\": \"09\",\r\n  \"year\": \"2029\",\r\n  \"currency\": \"SAR\",\r\n  \"description\": \"First payment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/payment/pay/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"pay",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view payment status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/payment/get-status/6bef16fa-37a1-42af-ae0b-3b52e9c441f2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"get-status",
+								"6bef16fa-37a1-42af-ae0b-3b52e9c441f2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment callback",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\":\"message\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/payment/callback/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"callback",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vendor contracts between two dates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contract/filter/date-between/2025-08-21/2025-08-23/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"filter",
+								"date-between",
+								"2025-08-21",
+								"2025-08-23",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get overdue contracts (unpaid for 15 days or more)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contract/filter/overdue/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"filter",
+								"overdue",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get top five vendors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/vendor/top-five",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								"top-five"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get almost expired contracts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contract/filter/almost-expired/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"filter",
+								"almost-expired",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Renew expired contract",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contract/renew/1/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"renew",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get contracts statistics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contract/statistics/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"statistics",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sync all contracts status from Moyasar API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contract/sync-status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contract",
+								"sync-status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
