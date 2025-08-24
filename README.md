@@ -14,7 +14,7 @@ A Planting and Landscaping Service Management System
 10. Sync all contracts status from Moyasar API: allows for updating the data records to match Moyasar data and remove inconsistency
 
 In addition to:
-1. Creating Invoice CRUD (removed later)
+1. Creating Invoice CRUD (Removed later)
 2. Creating Contract CRUD (Reconstructed by Hatem)
 
 ## How to contribute to the project development:
