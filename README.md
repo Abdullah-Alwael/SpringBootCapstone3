@@ -37,6 +37,5 @@ In addition to:
    `create database landscaping_system;`
 
    `use landscaping_system;`
-
+   
        - Note: start MySQL server
-
